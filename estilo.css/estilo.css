@@ -6,10 +6,31 @@
 
 .contenedor{
     width: 90%;/* ancho */
-    max-width: 1200px;/* maximo de anchura */
+    max-width: 1000px;/* maximo de anchura */
     overflow: hidden;/* Servicios */
-    margin: auto;/* margen automatica */
+    margin: 20px auto;
     padding: 60px 0;/* relleno */
+    display: grid;
+    grid-gap: 20px;/* margen de 20 px de izquierda a derecha */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor-galeria,
+.contenedor-servicio{
+    background: #703f24;
+    padding: 1px;
+    border-radius: 1px;
+}
+/*.contenedor .sidebar{
+    grid-column: 2 / 3;
+    background: #440404;
+}*/
+.contenedor .header{
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
 
 .header{
@@ -18,6 +39,28 @@
     background-position: center;/* posicion de la imagen de fondo central */
     background-size: cover;/*  */
     
+}
+/*.contenedor .sidebar{
+    grid-column: 3 / 4;
+    background: #440404;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-row: span 1;
+}*/
+
+@media screen and (max-width: 768px) {
+    .contenedor .contenido{
+        grid-column: 1 / -1;
+    }
+    .contenedor .sidebar{
+        grid-column: 1 / -1;
+    }
+    .contenedor .footer{
+        grid-column: 1 / -1;
+    }
 }
 
 .head{
@@ -166,7 +209,7 @@
 }
 
 footer{
-    background: #2b1b1b;
+    background: #2c1b1b;
     padding-bottom: 0.1px;/* padding abajo*/
 }
 
@@ -177,6 +220,7 @@ footer{
     flex-wrap: wrap;
     padding-top: 60px;/* padding arriba*/
     padding-bottom: 40px;/* padding abajo*/
+    grid-area: footer;
 }
 
 .contact-us{
@@ -185,7 +229,6 @@ footer{
     text-align: center;/* texto alineado al centro*/
     color: rgb(231, 226, 226);
 }
-
 .brand{
     font-weight: 500;/* peso de fuente*/
     font-size: 40px;/* tamaño de fuente*/
