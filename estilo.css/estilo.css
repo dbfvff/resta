@@ -51,13 +51,13 @@
     grid-row: span 1;
 }*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {/*comienza la parte responsive 768px es un tamaño default de un celular*/
     .contenedor .contenido{
-        grid-column: 1 / -1;
+        grid-column: 1 / -1;/*comienza en... y termina en....*/
     }
-    .contenedor .sidebar{
+    /*.contenedor .sidebar{
         grid-column: 1 / -1;
-    }
+    }*/
     .contenedor .footer{
         grid-column: 1 / -1;
     }
