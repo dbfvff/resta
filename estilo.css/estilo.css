@@ -77,11 +77,11 @@
     font-size: 60px;/* tamaño de fuente */
     margin-bottom: 15px;/* margen inferior*/
 }
-
+/*
 .copy{
-    font-weight: 300;/* peso de la fuente */
-    font-size: 25px;/* tamaño fuente */
-}
+    font-weight: 300;
+    font-size: 25px;
+}*/
 /* Servicios */
 .subtitulo{
     color: #492b2b;
@@ -110,20 +110,20 @@
     margin-bottom: 19px;/* margen inferior*/
     color: #440404;
 }
-
+/*
 .number{
-    display: inline-block;/* margen inferior*/
-    /* 02 */
+    display: inline-block;
+
     background-image: linear-gradient(to top, #e2b2b2 0%, #e9c8e0 100%);
-    line-height: 30px;/*  altura de linea */
-    text-align: center;/* alineacion de texto a centro*/
-    border-radius: 50%;/* radio del borde*/
-    margin-right: 5px;/* margen derecha*/
-    width: 30px;/* ancho */
-    height: 30px;/* altura*/
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
     color: rgb(8, 6, 6);
-    font-weight: 700;/* peso de fuente*/
-}
+    font-weight: 700;
+}*/
 
 .gallery{
     background: #f2f2f2;
@@ -144,27 +144,27 @@
     cursor: pointer;/* lo que apunta el puntero*/
 }
 
-.imagen-light{
+/*.imagen-light{
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;/* altura*/
-    height: 100%;/* margen abajo*/
-    top: 0;/* arriba*/
-    left: 0;/* izquierda*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     background: rgba(0, 0, 0, 0.534);
-    transform: translate(100%);/* transforma para el movimiento*/
-    transition: transform .2s ease-in-out;/* altura*/
-}
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;/
+}*/
 
-.agregar-imagen{
-    width: 60%;/* altura*/
+/*.agregar-imagen{
+    width: 60%
     transform: scale(0);
     border-radius: 10px;
     transition: transform .3s .2s;
-}
-
+}*/
+/*
 .showImage{
     transform: scale(1);
 }
@@ -172,7 +172,7 @@
 .show{
     transform: translate(0);
 }
-
+*/
 .close{
     position: absolute;
     top: 15px;
@@ -252,7 +252,7 @@ footer{
 .vinosparte{
     display: flex;
     justify-content:space-evenly;/* justificacion de contenido espaciado eventualmente*/
-    margin-top: 20px;/* margen arriba*/
+    margin-top: 10px;/* margen arriba*/
     flex-wrap: wrap;
 }
 
