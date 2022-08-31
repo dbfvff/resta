@@ -1,91 +1,85 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;/* toda la margen */
+    padding: 0;/* relleno */
+    box-sizing: border-box;/* tamaño de la caja, hasta el borde */
 }
 
-
-
 .contenedor{
-    width: 90%;
-    max-width: 1200px;
-    overflow: hidden;
-    margin: auto;
-    padding: 60px 0;
+    width: 90%;/* ancho */
+    max-width: 1200px;/* maximo de anchura */
+    overflow: hidden;/* Servicios */
+    margin: auto;/* margen automatica */
+    padding: 60px 0;/* relleno */
 }
 
 .header{
-    height: 87vh;
-    background-image:url(../img/fondo1-A.PNG);
-    background-position: center;
-    background-size: cover;
+    height: 40vh;/* altura */
+    background-image:url(../img/fondo1-A.PNG);/* utiliza una imagen como fondo */
+    background-position: center;/* posicion de la imagen de fondo central */
+    background-size: cover;/*  */
     
 }
 
 .head{
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    padding: 0;/* relleno */
+    height: 100%;/* altura */
+    display: flex;/* disposicion del flex natural*/
+    flex-direction: column nowrap;/* direcciona el flex a columna */ /* nowrap para que al mover la pagina se modifique junto a ella */
+    justify-content: center;/* contenido centrado */
+    text-align: center;/* alineacion de texto centrado */
     color: #fff;
 }
 
 .titulo{
-    font-size: 60px;
-    margin-bottom: 15px;
+    font-size: 60px;/* tamaño de fuente */
+    margin-bottom: 15px;/* margen inferior*/
 }
 
 .copy{
-    font-weight: 300;
-    font-size: 25px;
+    font-weight: 300;/* peso de la fuente */
+    font-size: 25px;/* tamaño fuente */
 }
-
-/* Services */
-
+/* Servicios */
 .subtitulo{
     color: #492b2b;
-    font-size: 40px;
-    text-align: center;
-    font-weight: 100px;
-    margin-bottom: 30px;
+    font-size: 40px;/* tamaño fuente */
+    text-align: center;/* alineacion de texto centro*/
+    font-weight: 100px;/* peso de la fuente */
+    margin-bottom: 30px;/* margen inferior*/
 }
 
 .servicio{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex;/* disposicion de flex natural*/
+    justify-content: space-evenly;/* contenido espaciado uniforme*/
+    align-items: center;/* margen inferior*/
+    flex-wrap: wrap;/* envolver flex*/
 }
 
 .contenedor-servicio img{
-    width: 40%;
+    width: 40%;/* ancho*/
 }
 
-
-
 .service{
-    margin-bottom: 20px;
+    margin-bottom: 20px;/* margen inferior*/
 }
 
 .n-service{
-    margin-bottom: 19px;
+    margin-bottom: 19px;/* margen inferior*/
     color: #440404;
 }
 
 .number{
-    display: inline-block;
+    display: inline-block;/* margen inferior*/
     /* 02 */
     background-image: linear-gradient(to top, #e2b2b2 0%, #e9c8e0 100%);
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
+    line-height: 30px;/*  altura de linea */
+    text-align: center;/* alineacion de texto a centro*/
+    border-radius: 50%;/* radio del borde*/
+    margin-right: 5px;/* margen derecha*/
+    width: 30px;/* ancho */
+    height: 30px;/* altura*/
     color: rgb(8, 6, 6);
-    font-weight: 700;
+    font-weight: 700;/* peso de fuente*/
 }
 
 .gallery{
@@ -93,18 +87,18 @@
 }
 
 .contenedor-galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 30px;
+    display: flex;/* altura*/
+    flex-wrap: wrap;/* envuelve el flex*/
+    justify-content: space-evenly;/* justificar el contenido, espacia uniformemente*/
+    margin-top: 30px;/* margen arriba*/
 }
 
 .img-galeria{
-    width: 30%;
-    display: block;
-    margin-bottom: 15px;
+    width: 30%;/* altura*/
+    display: block;/* bloqueo pantalla*/
+    margin-bottom: 15px;/* margen abajo*/
     box-shadow: 0 0 6px rgba(0, 0, 0, .6);
-    cursor: pointer;
+    cursor: pointer;/* lo que apunta el puntero*/
 }
 
 .imagen-light{
@@ -112,17 +106,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    width: 100%;/* altura*/
+    height: 100%;/* margen abajo*/
+    top: 0;/* arriba*/
+    left: 0;/* izquierda*/
     background: rgba(0, 0, 0, 0.534);
-    transform: translate(100%);
-    transition: transform .2s ease-in-out;
+    transform: translate(100%);/* transforma para el movimiento*/
+    transition: transform .2s ease-in-out;/* altura*/
 }
 
 .agregar-imagen{
-    width: 60%;
+    width: 60%;/* altura*/
     transform: scale(0);
     border-radius: 10px;
     transition: transform .3s .2s;
@@ -140,86 +134,88 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 40px;
+    width: 40px;/* altura*/
     cursor: pointer;
 }
 
 .experts{
-    width: 100%;
+    width: 100%;/* altura*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center;/* alineacion de items al centro*/
 }
 
 .cont-expert{
-    width: 30%;
+    width: 30%;/* altura*/
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px;/* margen abajo*/
 }
 
 .cont-expert img{
     display: block;
-    margin: auto;
-    width: 80%;
+    margin: auto;/* margen automatica*/
+    width: 80%;/* altura*/
 }
 
 .n-expert{
-    width: 100%;
+    width: 100%;/* altura*/
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 20px;/* margen arriba*/
     font-weight: 400;
 }
 
 footer{
     background: #2b1b1b;
-    padding-bottom: 0.1px;
+    padding-bottom: 0.1px;/* padding abajo*/
 }
 
 .footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;/* llamado de flex*/
+    justify-content: space-between;/* justficacion de contenido entre espacios*/
+    align-items: center;/* alineacion de items*/
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 60px;/* padding arriba*/
+    padding-bottom: 40px;/* padding abajo*/
 }
 
-
 .contact-us{
-    width: 100%;
+    width: 100%;/* altura*/
     color: #fff;
-    text-align: center;
+    text-align: center;/* texto alineado al centro*/
     color: rgb(231, 226, 226);
-    
 }
 
 .brand{
-    font-weight: 500;
-    font-size: 40px;
+    font-weight: 500;/* peso de fuente*/
+    font-size: 40px;/* tamaño de fuente*/
 }
 
 .paracarta{
-    text-align: center;
-    text-decoration: none;
-    font-style: oblique;
-    font-size: 30px;
+    text-align: center;/* alineacion de texto centro*/
+    text-decoration: none;/* ninguna decoracion al texto*/
+    font-style: oblique;/* estilo de fuente*/
+    font-size: 30px;/* tamaño fuente*/
 }
+
 #titulo11{
     color: rgb(247, 54, 54);
 }
+
 #carta22{
-    text-decoration: none;
+    text-decoration: none;/* ninguna decoracion al texto*/
 }
+
 .vinosparte{
     display: flex;
-    justify-content:space-evenly;
-    margin-top: 20px;
+    justify-content:space-evenly;/* justificacion de contenido espaciado eventualmente*/
+    margin-top: 20px;/* margen arriba*/
     flex-wrap: wrap;
 }
+
 .vinos22{
     color: #492b2b;
-    font-size: 36px;
-    font-weight: 100px;
-    margin-bottom: 30px;
+    font-size: 36px;/* tamaño de fuente */
+    font-weight: 100px;/* peso de fuente*/
+    margin-bottom: 30px;/* margen abajo*/
 }
